@@ -29,26 +29,30 @@
       $myusername = $_POST['username'];
       $mypassword = $_POST['password']; 
       
-      $sql = "SELECT * FROM users WHERE username = '$myusername' AND password = '$mypassword'";
+      $sql = "SELECT password, ID FROM users WHERE username = '$myusername'";
       $stmt = $db->prepare($sql);
       $stmt->execute();
 		
       if($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        session_start();
-                            
-        // Sparar data i session variabler
-        $_SESSION["loggedin"] = true;
-        $_SESSION["id"] = $row['ID'];
-        $_SESSION["username"] = $myusername;                            
-        
-        // Tar användaren till användarsidan
-        header("location: http://localhost/WELLO/board/");
 
-      } else {
+        $hash = $row['password'];
 
-         $error = "Ditt användarnamn eller lösenord är ogiltigt. Försök igen!";
-      
+        if (password_verify($mypassword, $hash)) {
+          session_start();
+
+          // Sparar data i session variabler
+          $_SESSION["loggedin"] = true;
+          $_SESSION["id"] = $row['ID'];
+          $_SESSION["username"] = $myusername;
+
+          // Tar användaren till användarsidan
+          header("location: http://localhost/WELLO/board/");
+        } else {
+            $error = "Ditt användarnamn eller lösenord är ogiltigt. Försök igen!";
         }
+      } else {
+         $error = "Ditt användarnamn eller lösenord är ogiltigt. Försök igen!";
+      }
 
       $stmt->closeCursor();
       $db = null;
