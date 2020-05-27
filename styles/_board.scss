@@ -1,0 +1,130 @@
+.board-body {
+  background-color: rgb(35, 141, 160);
+
+  .log-out {
+    color: rgb(35, 141, 160);
+    background-color: white;
+    border-radius: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+    // margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    // color: white;
+    color: rgb(35, 141, 160);
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70vw;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 5%;
+  gap: 3%;
+
+  .board1,
+  .board2,
+  .board3 {
+    display: flex;
+    flex-direction: column;
+
+    .todo-box {
+      background-color: rgba(245, 245, 245, 0.562);
+      text-align: center;
+      padding: 20px 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 2rem;
+      position: relative;
+      font-weight: bold;
+      font-size: 21px;
+      color: rgba(0, 0, 0, 0.829);
+
+      .task-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        border-top: 1px dotted rgba(128, 128, 128, 0.63);
+        border-bottom: 1px dotted rgba(128, 128, 128, 0.63);
+        color: black;
+        margin: 25px 0px;
+        padding: 10px 15px;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 17px;
+        cursor: move;
+
+        a:first-of-type:hover {
+          color:black;
+        }
+      }
+    }
+
+    .form1,
+    .form2,
+    .form3 {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 2rem;
+        border:none;
+
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 2rem;
+        border:none;       
+      }
+
+      button:hover{
+        background-color: rgb(145, 206, 145);
+      }
+    }
+  }
+}
+
+// .input_boxes {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   width: 70vw;
+//   margin: 0px auto;
+//   margin-top: 1%;
+//   gap: 3%;
+
+//   div {
+//     display: flex;
+//     flex-direction: column;
+
+//     input {
+//       background-color: rgba(245, 245, 245, 0.185);
+//       border: none;
+//       border-bottom: 1px solid lightslategray;
+//       padding: 15px;
+//       font-size: 18px;
+//     }
+
+//     .add-todo {
+//       width: 100%;
+//       background-color: rgba(245, 245, 245, 0.185);
+//       border: none;
+//       height: 7vh;
+//       font-size: 14px;
+//       cursor: pointer;
+//       color: rgb(73, 73, 73);
+
+//       &:hover {
+//         font-size: 16px;
+//         color: black;
+//       }
+//     }
+//   }
+// }

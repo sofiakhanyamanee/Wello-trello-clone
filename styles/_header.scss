@@ -1,0 +1,42 @@
+.startpage-header {
+  background-image: url(../header.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 105vh;
+}
+
+.register-form {
+  margin-top: 350px;
+  margin-left: 335px;
+}
+
+.label-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.register-input {
+  height: 7vh;
+  padding: 10px 12px;
+  border: none;
+  border-bottom: 1px solid rgb(173, 169, 169);
+  font-size: 18px;
+}
+
+.submit {
+  height: 7vh;
+  margin: 30px 0px;
+  border: 1px solid rgb(35, 145, 160);
+  border-radius: 2rem;
+  color: rgb(35, 145, 160);
+  font-size: 18px;
+
+  &:hover {
+    background-color: rgb(35, 145, 160);
+    color: white;
+  }
+}

@@ -1,0 +1,72 @@
+.login_body {
+  background-image: url(../background.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 105vh;
+
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    padding: 25vh 0;
+
+    .login_form_box {
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 50px;
+      margin: 0 auto;
+
+      .login_heading {
+        font-size: 23px;
+        font-weight: 100;
+        text-align: center;
+      }
+      .label-input-container {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 30vw;
+      }
+
+      .login_label {
+        padding: 20px 0px;
+      }
+
+      .login_input {
+        height: 3vh;
+        padding: 10px 0px;
+        border: none;
+        border-bottom: 1px solid rgb(173, 169, 169);
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .login_submit_btn {
+        height: 6vh;
+        margin: 30px 0px;
+        border: 1px solid rgb(35, 145, 160);
+        border-radius: 2rem;
+        color: rgb(35, 145, 160);
+        font-size: 18px;
+
+        &:hover {
+          background-color: rgb(35, 145, 160);
+          color: white;
+        }
+      }
+
+      .error-msg {
+        font-size: 13px;
+        text-align: center;
+        color: lightcoral;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px 0px;
+      }
+    }
+  }
+}
