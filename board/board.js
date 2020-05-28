@@ -90,3 +90,24 @@ function closeForm(event) {
   document.getElementById(id).style.display = "none";
 }
 
+
+function validateForm(){
+
+  const input_todo = document.getElementById("input_todo");
+  const input_doing = document.getElementById("input_doing");
+  const input_done = document.getElementById("input_done");
+  
+  if(input_todo.value.trim() == null || input_todo.value.trim() == ''){
+    return false;
+  }
+
+  if(input_doing.value.trim() == null || input_doing.value.trim() == ''){
+    return false;
+  }
+
+  if(input_done.value.trim() == null || input_done.value.trim() == ''){
+    return false;
+  }
+  
+}
+
