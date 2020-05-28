@@ -2,7 +2,7 @@
   
    /********************************************************************
   * 
-  * Filnamn: create_board2.php
+  * Filnamn: create_board3.php
   * Författare: Sofia Khan Yamanee
   * 
   * Info: Filen skriver ut tasks från databasen med status "Klar"
@@ -73,7 +73,7 @@
     $task_status = $row2['status'];
     $status_id = $row2['ID'];
 
-    $boardOutput .= "<div class='board3'><div class='todo-box todo-box3' id='$status_id' ondrop='onDrop(event, this)' ondragover='allowDrop(event)'>$task_status";
+    $boardOutput .= "<div class='board3'><div class='todo-box todo-box3' id='$status_id' ondrop='onDrop(event, this)' ondragover='allowDrop(event)'><h1>$task_status</h1>";
 
   }
 
@@ -115,7 +115,7 @@
   $boardOutput .= "</div>
                     <form class='form3' action='create_board3.php' method='POST' onsubmit='return validateFormDone()'>
                       <input type='text' id='input_done' name='task3' placeholder='Behövs göras..'>
-                      <button class='add-todo add3' type='submit'> ＋ Lägg till kort 3</button>
+                      <button class='add-todo add3' type='submit'> Lägg till kort </button>
                     </form>
                   </div>";
 

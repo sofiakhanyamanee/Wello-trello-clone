@@ -1,23 +1,20 @@
 .login_body {
-  background-image: url(../background.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: url(../login_bg.png);
   background-size: cover;
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
 
   .login-box {
     display: flex;
     flex-direction: column;
-    padding: 25vh 0;
+    padding: 15vh 0;
 
     .login_form_box {
       display: flex;
       align-self: center;
       flex-direction: column;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      padding: 50px;
+      // padding: 50px;
       margin: 0 auto;
 
       .login_heading {

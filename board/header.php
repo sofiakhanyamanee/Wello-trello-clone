@@ -12,8 +12,7 @@
     <nav>
       <img src="../logoo.png" alt="" class="logo" />
       <a href="http://localhost/WELLO/logout.php" class="log-out">Logga ut</a>
-    </nav>    
-  <h1>Din tavla</h1>  
+    </nav>
   <div class="board"> 
 
 

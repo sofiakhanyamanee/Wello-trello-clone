@@ -6,15 +6,6 @@
     background-color: white;
     border-radius: 2rem;
   }
-
-  h1 {
-    text-align: center;
-    // margin-top: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    // color: white;
-    color: rgb(35, 141, 160);
-  }
 }
 
 .board {
@@ -31,11 +22,11 @@
   .board3 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 
     .todo-box {
       background-color: rgba(245, 245, 245, 0.562);
       text-align: center;
-      padding: 20px 0px;
       font-family: Arial, Helvetica, sans-serif;
       border-radius: 2rem;
       position: relative;
@@ -43,23 +34,36 @@
       font-size: 21px;
       color: rgba(0, 0, 0, 0.829);
 
+      h1{
+        font-size: 20px;
+        padding: 20px 0px;
+      }
+
       .task-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         list-style-type: none;
-        border-top: 1px dotted rgba(128, 128, 128, 0.63);
-        border-bottom: 1px dotted rgba(128, 128, 128, 0.63);
+        border-top: 7px solid rgb(42, 129, 145);
         color: black;
-        margin: 25px 0px;
-        padding: 10px 15px;
+        padding-top: 10px;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-bottom: 3px;
         text-align: center;
         font-weight: lighter;
         font-size: 17px;
         cursor: move;
 
+        &:hover{
+          background-color: rgba(255, 248, 248, 0.616);
+        }
+
+        p{
+          padding: 10px 0px;
+          font-size: 15px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
         a:first-of-type:hover {
-          color:black;
+          color: black;
         }
       }
     }
@@ -75,20 +79,20 @@
         margin-top: 20px;
         margin-bottom: 10px;
         border-radius: 2rem;
-        border:none;
-
+        border: none;
       }
 
       button {
         padding: 10px;
         border-radius: 2rem;
-        border:none;       
+        border: none;
       }
 
-      button:hover{
+      button:hover {
         background-color: rgb(145, 206, 145);
       }
     }
   }
 }
+
 

@@ -2,7 +2,7 @@
 
  /********************************************************************
   * 
-  * Filnamn: login_process.php
+  * Filnamn: loginout.php
   * Författare: Sofia Khan Yamanee
   * 
   * Info: Filen raderar alla sessions variabler och återgår

@@ -73,7 +73,7 @@ require_once 'board.php';
    $task_status = $row2['status'];
    $status_id = $row2['ID'];
    
-   $boardOutput .= "<div class='board1'><div class='todo-box todo-box1' id='$status_id' ondrop='onDrop(event, this)' ondragover='allowDrop(event)'>$task_status";
+   $boardOutput .= "<div class='board1'><div class='todo-box todo-box1' id='$status_id' ondrop='onDrop(event, this)' ondragover='allowDrop(event)'><h1>$task_status</h1>";
  
    }
  
@@ -115,7 +115,7 @@ require_once 'board.php';
  $boardOutput .= "</div>
                    <form class='form1' action='create_board1.php' method='POST' onsubmit='return validateFormTodo()'>
                      <input type='text' id='input_todo' name='task1' placeholder='Behövs göras..'>
-                     <button class='add-todo add1' type='submit'> ＋ Lägg till kort 1</button>
+                     <button class='add-todo add1' type='submit'> Lägg till kort </button>
                    </form>
                  </div>";
 

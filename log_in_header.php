@@ -8,7 +8,7 @@
   </head>
 <body class="login_body">
 
-<nav>
+      <nav>
         <div class="logo-box">
         <img src="logoo.png" alt="" class="logo">
       </div>
