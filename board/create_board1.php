@@ -73,7 +73,7 @@ require_once 'board.php';
    $task_status = $row2['status'];
    $status_id = $row2['ID'];
    
-   $boardOutput .= "<div class='board1'><div class='todo-box todo-box1' id='$status_id' ondrop='onDrop(event)' ondragover='allowDrop(event)'>$task_status";
+   $boardOutput .= "<div class='board1'><div class='todo-box todo-box1' id='$status_id' ondrop='onDrop(event, this)' ondragover='allowDrop(event)'>$task_status";
  
    }
  
@@ -90,7 +90,7 @@ require_once 'board.php';
  $task_id = $row3['task_id'];
 
  $boardOutput .= "
-                <div class='task-box' id='$task_id' draggable='true' ondragstart='onDrag(event)' value='$task_todo'>
+                <div class='task-box' id='$task_id' draggable='true' ondragstart='onDrag(event)' ondrop='return false' ondragover='return false' value='$task_todo'>
                   <p>$task_todo</p>
                   <a href='delete.php?id=$task_id'>✖</a>
                   <button class='open-button' onclick='openForm(event)'>✐</button>
@@ -102,7 +102,7 @@ require_once 'board.php';
                         <div class='fieldAndBtns'>
                           <input type='text' name='updated_task' value='$task_todo' required>
                           <input type='hidden' name='task_id' value='$task_id'>
-                          <button type='submit' class='btn'>Redigera</button>
+                          <button type='submit' class='btn'>Uppdatera</button>
                           <button type='button' class='btn cancel' onclick='closeForm(event)'>Avbryt</button>
                         </div>
                       </form>

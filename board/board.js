@@ -24,13 +24,13 @@ function onDrag(event) {
   console.log("Från box: " + from)
 }
 
-function onDrop(event) {
+function onDrop(event, el) {
   event.preventDefault();
   to = event.target.id;
   console.log(event);
   console.log('Till box: ' + to)
   let data = event.dataTransfer.getData("text");
-  event.target.appendChild(document.getElementById(data));
+  el.appendChild(document.getElementById(data));
 
   if (from !== to){
 
