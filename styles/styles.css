@@ -48,6 +48,30 @@ a {
   margin-left: 335px;
 }
 
+.register-form .error-msg {
+  font-size: 16px;
+  color: lightcoral;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px 0px;
+}
+
+.register-form .successful-msg {
+  font-size: 16px;
+  color: #6fcf87;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -20px;
+}
+
+.register-form .log-in-link {
+  padding: 0px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.register-form .log-in-link:hover {
+  color: gray;
+}
+
 .label-input-container {
   display: -webkit-box;
   display: -ms-flexbox;

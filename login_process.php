@@ -47,6 +47,7 @@
 
           // Tar användaren till användarsidan
           header("location: http://localhost/WELLO/board/");
+
         } else {
             $error = "Ditt användarnamn eller lösenord är ogiltigt. Försök igen!";
         }
@@ -77,15 +78,3 @@
                
   </div>
  
-
-
-  <script>
-
-    
-    // let login_error = document.querySelector(".login_submit_btn")
-    // login_error.addEventListener("click", function () {  
-    //   document.querySelector(".error-msg").style="display:initial";
-    // });
-  
-  
-  </script>

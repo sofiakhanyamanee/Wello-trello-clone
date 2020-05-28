@@ -18,7 +18,7 @@
       </div>
       </nav>
 
-      <form action="#" method="POST" class="register-form">
+      <!-- <form action="#" method="POST" class="register-form">
         <div class="label-input-container">
           <label for="uname"></label>
           <input
@@ -43,6 +43,6 @@
           <button class="submit" type="submit">Registrera dig gratis!</button>
         </div>
       </form>
-    </header>
+    </header> -->
 
 
