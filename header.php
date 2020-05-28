@@ -18,31 +18,5 @@
       </div>
       </nav>
 
-      <!-- <form action="#" method="POST" class="register-form">
-        <div class="label-input-container">
-          <label for="uname"></label>
-          <input
-            type="text"
-            placeholder="Användarnamn"
-            name="uname"
-            id="uname"
-            required
-            class="register-input"
-          />
-
-          <label for="psw"></label>
-          <input
-            type="password"
-            placeholder="Lösenord"
-            name="psw"
-            id="psw"
-            required
-            class="register-input"
-          />
-
-          <button class="submit" type="submit">Registrera dig gratis!</button>
-        </div>
-      </form>
-    </header> -->
 
 

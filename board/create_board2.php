@@ -112,7 +112,7 @@ require_once 'board.php';
   }
 
   $boardOutput .= "</div>
-                    <form class='form2' action='create_board2.php' method='POST' onsubmit='return validateForm()'>
+                    <form class='form2' action='create_board2.php' method='POST' onsubmit='return validateFormDoing()'>
                       <input type='text' id='input_doing' name='task2' placeholder='Behövs göras..'>
                       <button class='add-todo add2' type='submit'> ＋ Lägg till kort 2</button>
                     </form>

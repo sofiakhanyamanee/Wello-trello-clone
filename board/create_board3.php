@@ -113,7 +113,7 @@
   }
 
   $boardOutput .= "</div>
-                    <form class='form3' action='create_board3.php' method='POST' onsubmit='return validateForm()'>
+                    <form class='form3' action='create_board3.php' method='POST' onsubmit='return validateFormDone()'>
                       <input type='text' id='input_done' name='task3' placeholder='Behövs göras..'>
                       <button class='add-todo add3' type='submit'> ＋ Lägg till kort 3</button>
                     </form>

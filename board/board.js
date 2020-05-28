@@ -91,20 +91,23 @@ function closeForm(event) {
 }
 
 
-function validateForm(){
-
+function validateFormTodo(){
   const input_todo = document.getElementById("input_todo");
-  const input_doing = document.getElementById("input_doing");
-  const input_done = document.getElementById("input_done");
-  
   if(input_todo.value.trim() == null || input_todo.value.trim() == ''){
     return false;
   }
+}
 
+function validateFormDoing(){
+  const input_doing = document.getElementById("input_doing");
   if(input_doing.value.trim() == null || input_doing.value.trim() == ''){
     return false;
   }
+  
+}
 
+function validateFormDone(){
+  const input_done = document.getElementById("input_done");
   if(input_done.value.trim() == null || input_done.value.trim() == ''){
     return false;
   }

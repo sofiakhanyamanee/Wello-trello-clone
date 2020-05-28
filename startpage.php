@@ -44,7 +44,7 @@ if ($stmt1->rowCount() == 0) {
       $stmt2->execute();
 
       if ($sql2 == true){  
-                        
+
                   $successful= "Du är nu registrerad hos oss på Wello! 
                   <a href='http://localhost/WELLO/log_in.php' class ='log-in-link' >Logga in nu</a>";
       }
@@ -57,7 +57,7 @@ if ($stmt1->rowCount() == 0) {
 ?>
 
 
-<form action="" method="POST" class="register-form">
+<form method="POST" class="register-form" onsubmit="return validateForm()">
         <div class="label-input-container">
           <label for="uname"></label>
           <input
@@ -78,9 +78,10 @@ if ($stmt1->rowCount() == 0) {
             required
             class="register-input"
           />
-          <button class="submit" type="submit">Registrera dig gratis!</button>
+          <button data-rel="back" class="submit" type="submit">Registrera dig gratis!</button>
         </div>
         <p class="error-msg"><?php echo $error; ?></p>
+        <p class="error-input"></p>
         <p class="successful-msg"><?php echo $successful; ?></p>
       </form>
     </header>
