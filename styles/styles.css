@@ -40,12 +40,12 @@ a {
   background-image: url(../header.png);
   background-size: cover;
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
 }
 
 .register-form {
-  margin-top: 350px;
-  margin-left: 335px;
+  margin-top: 22%;
+  margin-left: 22%;
 }
 
 .register-form .error-msg {
@@ -81,6 +81,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 30vw;
+  height: 40vh;
 }
 
 .register-input {
@@ -151,6 +152,7 @@ a {
   font-weight: bold;
   font-size: 21px;
   color: rgba(0, 0, 0, 0.829);
+  padding-bottom: 150px;
 }
 
 .board .board1 .todo-box h1,
